@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Angličtina – Unit 4 High-tech (Project Explore 2)</title>
+<style>
+  :root{--bg:#0d1626;--panel:#16243c;--cy:#3fd0e0;--lime:#a8e05a;--amb:#ffc24a;--pink:#ff7a9c;--ink:#e6eef8;--muted:#9fb6cc}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(ellipse at top,#1a2c4a,var(--bg) 60%);color:var(--ink);font-family:'Segoe UI',Arial,sans-serif;line-height:1.5}
+  .wrap{max-width:1100px;margin:0 auto;padding:22px 16px 60px}
+  header{text-align:center;margin-bottom:16px}
+  h1{font-size:clamp(28px,5.5vw,52px);margin:4px 0 0;color:#fff;letter-spacing:1px}
+  h1 span{color:var(--cy)}
+  .sub{color:var(--muted);font-size:clamp(15px,2.4vw,19px)}
+  .icons{font-size:clamp(26px,5vw,40px);letter-spacing:8px}
+  .player{background:#000;border:3px solid var(--cy);border-radius:12px;overflow:hidden;box-shadow:0 10px 40px #000a}
+  video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+  .tip{color:var(--muted);text-align:center;margin:8px 0 0;font-size:15px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .box{background:var(--panel);border:2px solid #2a3f60;border-radius:12px;padding:16px 18px}
+  .box h2{margin:0 0 10px;color:var(--cy);font-size:22px}
+  .box.lime h2{color:var(--lime)} .box.amb h2{color:var(--amb)} .box.pink h2{color:var(--pink)}
+  .chap{display:flex;gap:10px;align-items:baseline;width:100%;text-align:left;font:inherit;font-size:17px;color:var(--ink);background:none;border:0;border-bottom:1px solid #2a3f60;padding:9px 4px;cursor:pointer}
+  .chap:hover{background:#1e3152}
+  .chap.now{background:#254069;color:#fff}
+  .chap b{color:var(--cy);min-width:56px;font-variant-numeric:tabular-nums}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  td{padding:6px;border-bottom:1px solid #2a3f60;vertical-align:top}
+  td:first-child{color:var(--cy);font-weight:bold;white-space:nowrap}
+  .lime td:first-child{color:var(--lime)} .amb td:first-child{color:var(--amb)} .pink td:first-child{color:var(--pink)}
+  .full{grid-column:1/-1}
+  code{background:#0f1c30;padding:2px 6px;border-radius:5px;color:#ffe278}
+  footer{text-align:center;color:var(--muted);margin-top:28px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="icons">💻🤖🎧🚀</div>
+    <h1>Angličtina – <span>Unit 4 High-tech</span></h1>
+    <div class="sub">Project Explore 2 · všechno, co bude v testu · průvodce robot Chip · 28 minut</div>
+  </header>
+
+  <div class="player"><video id="v" src="https://github.com/luciehavrankovacz-hub/anglictina-unit4/releases/download/v1/anglictina_unit4.mp4" controls preload="metadata" playsinline></video></div>
+  <p class="tip">📱 Na mobilu otoč telefon na šířku a dej celou obrazovku ⛶ · anglické věty říká britský hlas</p>
+
+  <div class="grid">
+    <div class="box">
+      <h2>🎬 Kapitoly (klikni a video skočí)</h2>
+      <div id="chapters"></div>
+    </div>
+
+    <div class="box amb">
+      <h2>⚡ WILL vs GOING TO</h2>
+      <table class="amb">
+        <tr><td>WILL</td><td>rozhoduju se <b>právě teď</b> – nabídka, slib, hádání<br><i>I'll help you. · I think it will rain.</i></td></tr>
+        <tr><td>GOING TO</td><td>bylo rozhodnuto <b>dřív</b>, nebo <b>vidím důkaz</b><br><i>I'm going to visit my grandma. · Look! It's going to rain.</i></td></tr>
+        <tr><td>nápověda</td><td><code>I think, probably</code> → will · <code>Look!</code>, plán, domluveno → going to</td></tr>
+      </table>
+    </div>
+
+    <div class="box lime">
+      <h2>📍 IN · ON · AT (trychtýř)</h2>
+      <table class="lime">
+        <tr><td>IN</td><td>velký kus času – in 2026, in May, in the morning</td></tr>
+        <tr><td>ON</td><td>jeden den nebo datum – on Monday, on 3rd May</td></tr>
+        <tr><td>AT</td><td>jeden bod – at six o'clock, at Christmas</td></tr>
+        <tr><td>chyták</td><td>in the evening, ale <b>at night</b> · at school, at home</td></tr>
+      </table>
+    </div>
+
+    <div class="box pink">
+      <h2>🗣️ Výslovnost /v/ × /w/</h2>
+      <table class="pink">
+        <tr><td>/v/</td><td>horní zuby na spodní ret – <b>love, very, vlog</b></td></tr>
+        <tr><td>/w/</td><td>rty do kolečka jako U – <b>will, with, why</b></td></tr>
+        <tr><td>test</td><td>prst před pusu: u /v/ cítíš zuby, u /w/ necítíš nic</td></tr>
+      </table>
+    </div>
+
+    <div class="box full">
+      <h2>❓ Otázka z odpovědi – 4 kroky</h2>
+      <table>
+        <tr><td>1</td><td>najdi, na co se ptáš</td></tr>
+        <tr><td>2</td><td>vyber tázací slovo: who, what, where, when, why, how</td></tr>
+        <tr><td>3</td><td>přidej pomocné sloveso (minulý čas → <code>did</code>)</td></tr>
+        <tr><td>4</td><td>sloveso vrať do základního tvaru: <code>took → take</code></td></tr>
+        <tr><td>zlaté<br>pravidlo</td><td>Když se ptáš na <b>podmět</b> (kdo to udělal), <b>did tam není</b> a sloveso zůstane v minulém čase:<br><i>Who <b>took</b> the pencil from Andy?</i> × <i>Who <b>did</b> John <b>take</b> the pencil from?</i></td></tr>
+      </table>
+    </div>
+  </div>
+  <footer>Vyrobeno s pomocí AI (Claude) podle učebnice a pracovního sešitu Project Explore 2, Unit 4.<br>Obrázky, hudba i hlasy jsou vytvořené počítačem. 🤖</footer>
+</div>
+
+<script>
+const CHAPTERS = [[0, 'Úvod – co bude v testu'], [66, '1. 4A Online (internet a počítače)'], [226, '2. 4B Great ideas (vynálezy)'], [377, '3. 4C Computer games'], [511, '4. 4D + Everyday English (nabídka pomoci)'], [696, '5. Výslovnost V a W'], [841, '6. WILL a GOING TO'], [1241, '7. IN, ON, AT'], [1418, '8. Otázky z odpovědi']];
+const v = document.getElementById('v');
+const zvukZap = () => { v.muted = false; v.defaultMuted = false; v.removeAttribute('muted'); if (v.volume < 0.05) v.volume = 1; };
+zvukZap();
+v.addEventListener('loadedmetadata', zvukZap);
+v.addEventListener('play', zvukZap);
+const fmt = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+const box = document.getElementById('chapters');
+CHAPTERS.forEach(([t, name]) => {
+  const b = document.createElement('button'); b.className = 'chap'; b.dataset.t = t;
+  b.innerHTML = '<b>' + fmt(t) + '</b><span>' + name + '</span>';
+  b.onclick = () => {
+    const go = () => { zvukZap(); v.currentTime = t; v.play().catch(() => {}); };
+    if (v.readyState >= 1) go(); else { v.addEventListener('loadedmetadata', go, { once: true }); v.load(); }
+    v.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+  box.appendChild(b);
+});
+v.addEventListener('timeupdate', () => {
+  let cur = null; document.querySelectorAll('.chap').forEach(b => { b.classList.remove('now'); if (+b.dataset.t <= v.currentTime) cur = b; });
+  if (cur) cur.classList.add('now');
+});
+</script>
+</body>
+</html>
